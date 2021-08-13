@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 3276.6 1239.1"><defs><style>
+
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url("../Fonts/Poppins/Poppins-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins-BoldItalic";
+  src: url("../Fonts/Poppins/Poppins-BoldItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins-ExtraBold";
+  src: url("../Fonts/Poppins/Poppins-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins-ExtraBoldItalic";
+  src: url("../Fonts/Poppins/Poppins-ExtraBoldItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins-ExtraLight";
+  src: url("../Fonts/Poppins/Poppins-ExtraLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins-ExtraLightItalic";
+  src: url("../Fonts/Poppins/Poppins-ExtraLightItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins-Italic";
+  src: url("../Fonts/Poppins/Poppins-Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins-Light";
+  src: url("../Fonts/Poppins/Poppins-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins-LightItalic";
+  src: url("../Fonts/Poppins/Poppins-LightItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins-Medium";
+  src: url("../Fonts/Poppins/Poppins-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins-MediumItalic";
+  src: url("../Fonts/Poppins/Poppins-MediumItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("../Fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url("../Fonts/Poppins/Poppins-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins-SemiBoldItalic";
+  src: url("../Fonts/Poppins/Poppins-SemiBoldItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins-Thin";
+  src: url("../Fonts/Poppins/Poppins-Thin.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins-ThinItalic";
+  src: url("../Fonts/Poppins/Poppins-ThinItalic.ttf") format("truetype");
+}
+
+
+.cls-1{isolation:isolate;}.cls-2,.cls-5,.cls-8{fill:#fff;}.cls-3{fill:#ed006c;}.cls-4{mix-blend-mode:screen;fill:url(#linear-gradient);}.cls-5{opacity:0.1;}.cls-6{opacity:0.19;mix-blend-mode:lighten;fill:url(#linear-gradient-2);}.cls-7{fill:#00a170;}.cls-8{font-size:300px;font-family:Poppins-Light, Poppins;font-weight:400;}.cls-9{fill:#151515;opacity:0.01;}</style><linearGradient id="linear-gradient" x1="822.18" y1="589.68" x2="2454.45" y2="589.68" gradientUnits="userSpaceOnUse"><stop offset="0.06" stop-color="#e889b9"/><stop offset="0.2" stop-color="#ce7aa4"/><stop offset="0.52" stop-color="#b2698e"/><stop offset="0.83" stop-color="#995b7a"/><stop offset="1" stop-color="#7f4b65"/></linearGradient><linearGradient id="linear-gradient-2" x1="1669.44" y1="-57.54" x2="1638.24" y2="2272.06" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ED006C"/><stop offset="0.13" stop-color="#D6006B"/><stop offset="0.56" stop-color="#C10061"/><stop offset="0.86" stop-color="#AD0057"/><stop offset="1" stop-color="#99004D"/></linearGradient></defs><g class="cls-1"><g id="explore_now_slide_layer">
+<animateTransform attributeType="XML" attributeName="transform" type="translate" from="0" to="600" dur="80ms" begin="maskam.mouseover" end="maskam.mouseout" fill="freeze"/>
+<animateTransform attributeType="XML" attributeName="transform" type="translate" from="600" to="0" dur="40ms" begin="maskam.mouseout" end="maskam.mouseover" fill="freeze"/>
+<g id="explore_now_slide"><g id="explore_now_arrow_group"><g id="explore_now_arrow_background"><ellipse class="cls-2" cx="2102.6" cy="591.9" rx="215.3" ry="230.9"/></g><polygon id="explore_now_arrow" class="cls-3" points="2081.5 552.6 1968.6 552.6 1969.3 631.1 2081.5 631.1 2081.5 724.2 2236.6 591.9 2081.5 459.5 2081.5 552.6"/></g><g id="explore_now_slide_shadow"><path id="explore_now_slide_shadow_3" class="cls-4" d="M2300.3,256.9c-99.3-89.3-230.9-138.4-370.5-138.4h-583c-139.5,0-271.1,49.1-370.5,138.4S822.2,464.3,822.2,589.7s54.7,243.5,154.1,332.8,231,138.4,370.5,138.4h583c139.6,0,271.2-49.2,370.5-138.4S2454.5,715,2454.5,589.7,2399.7,346.1,2300.3,256.9Zm-13.1,653.8c-91.7,82.3-218.2,133.5-357.4,133.5h-583c-278.3,0-506-204.6-506-454.5,0-125,56.9-238.6,148.6-321s218.3-133.5,357.4-133.5h583c278.3,0,506.1,204.5,506.1,454.5C2435.9,714.6,2378.9,828.3,2287.2,910.7Z"/><rect id="explore_now_slide_shadow_2" class="cls-5" x="840.8" y="135.2" width="1595.1" height="909.01" rx="423.8"/><path id="explore_now_slide_shadow_1" class="cls-6" d="M2435.9,575.6c0,5.7-.2,11.5-.4,17.2-318.2,51.6-329.2,37.2-635.2,4.6-312.5-33.2-622.1-102.8-911.7-214.1,25.2-48,59.4-91.5,100.8-128.7,91.8-82.4,218.3-133.5,357.4-133.5h583C2208.1,121.1,2435.9,325.6,2435.9,575.6Z"/></g></g></g><g id="explore_now_green_layer"><g id="explore_now_green_group"><rect id="explore_now_button_green" class="cls-7" x="101.9" y="112.5" width="2387.6" height="948.33" rx="474.2">
+<animate attributeName="fill" attributeType="CSS" from="#00a170" to="#7F0046" dur="80ms" begin="maskam.mouseover" end="maskam.mouseout" fill="freeze"/>
+<animate attributeName="fill" attributeType="CSS" from="#7F0046" to="#00a170" dur="80ms" begin="maskam.mouseout" end="maskam.mouseover" fill="freeze"/>
+</rect>
+<text id="explore_now_button_text" class="cls-8" x="40%" y="50%" dominant-baseline="middle" text-anchor="middle">GET STARTED</text>
+</g></g><g id="maskam">
+<a xlink:href="/existing_customer" target="_blank"><rect id="mask" class="cls-9" width="3276.6" height="1239.07"/></a></g></g>
+</svg>

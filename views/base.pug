@@ -1,14 +1,142 @@
 doctype html
 html
     head
-        title Main page #{title}
+        meta(charset='UTF-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
         link(rel='stylesheet' href='/static/css/style.css')
+        link(rel='stylesheet' href='/static/css/responsive.css')
+        link(rel='stylesheet' href='/static/css/navbar.css')
         link(rel='shortcut icon' type='image/svg+xml' href='/static/img/bookmark.svg')
-
+        title #{homepageHeadTitleText}
     body
-        h1 Hello world!!!! 
-        p this is description
-        h1=title 
-        p=description.toUpperCase()
-        - const x = 'hello'
-        h2=x
+        div.header
+            nav.navbar.inline
+                ul.main-nav
+                    li.company-logo
+                        a.logo(href='/')
+                    li.home
+                        a.submenu-link#home-link(href='/') HOME
+                        div.submenu.hidden
+                            ul.left-window
+                                li.home-nav-child.multi-device-panel-selector.active-nav
+                                    span MULTI-DEVICE PROTECTION
+                                li.home-nav-child.small-device-panel-selector
+                                    span SMALL OFFICE PROTECTION
+                            div.right-window
+                                div.home-panel-selector.twelve-column-grid.active-panel#multi-device-panel
+                                    div.multi-device-icon
+                                        object(data='/static/Svg/premium.svg', type='image/svg+xml')
+                                    div.multi-device-icon
+                                        object(data='/static/Svg/advanced.svg', type='image/svg+xml')
+                                    div.multi-device-icon
+                                        object(data='/static/Svg/essential.svg', type='image/svg+xml')
+                                    div.full-width.align-center.check-mark-symbol
+                                        p Compare level of protection
+                                div.home-panel-selector.twelve-column-grid#small-device-panel
+                                    div.small-office-protection-offer
+                                        object(data='/static/Svg/small-office.svg', type='image/svg+xml')
+                                    div.small-office-protection-content
+                                        span Secure your internet. best option for a small business
+                                        ul.nav-text-list.check-mark-symbol
+                                            li Secure banking, and online transaction
+                                            li Data and identity protection solution
+                                            li Multi-device, and cloud system protection
+                                        div.small-button
+                                            object(data='/static/Svg/button-explore-now.svg', type='image/svg+xml')
+                    li.business 
+                        a.submenu-link#business-link(href='/') BUSINESS
+                        div.submenu.hidden
+                            ul.left-window
+                                li.business-nav-child.business-solutions-panel-selector.active-nav
+                                    span BUSINESS SOLUTIONS
+                                li.business-nav-child.enterprise-solutions-panel-selector
+                                    span ENTERPRISE SOLUTIONS
+                                li.business-nav-child.partnerships-panel-selector
+                                    span PARTNERSHIPS
+                            div.right-window
+                                div.business-panel-selector.twelve-column-grid.active-panel#business-solutions-panel
+                                    div.business-offer
+                                        div.nav-icon
+                                            object(data='/static/Svg/business-solutions.svg', type='image/svg+xml')
+                                        div.nav-text-header
+                                            h4.align-center
+                                                a(href='/business/small-and-medium/') BUSINESS SOLUTIONS
+                                            p.align-center Protect your company endpoints, business data and users.
+                                        div.large-button
+                                            object(data='/static/Svg/button-solutions-for-business.svg', type='image/svg+xml')
+                                    div.business-content
+                                        div.nav-text-header
+                                            p Recommended for Business
+                                            ul.nav-text-list.circle-symbol
+                                                li PROTECT Entry
+                                                li PROTECT Advanced
+                                                li PROTECT Complete
+                                div.business-panel-selector.twelve-column-grid#enterprise-solutions-panel
+                                    div.business-offer
+                                        div.nav-icon
+                                           object(data='/static/Svg/enterprise-solutions.svg', type='image/svg+xml') 
+                                        div.nav-text-header
+                                            h4.align-center
+                                                a(href='/business/enterprise/') ENTERPRISE SOLUTIONS
+                                            p.align-center Protect your company endpoints, business data and users
+                                        div.large-button
+                                            object(data='/static/Svg/button-solutions-for-enterprise.svg', type='image/svg+xml')
+                                    div.business-content
+                                        div.nav-text-header
+                                            p Recommended for Corporation
+                                            ul.nav-text-list.circle-symbol
+                                                li PROTECT for Enterprise
+                                                li PROTECT Data
+                                                li Cybersecurity services
+                                div.business-panel-selector.twelve-column-grid#partnerships-panel
+                                    div.business-offer
+                                        div.nav-icon
+                                            object(data='/static/Svg/partnerships.svg', type='image/svg+xml')
+                                        div.nav-text-header
+                                            h4.align-center
+                                                a(href='/') SERVICE PROVIDERS
+                                            p.align-center Explore our programs with daily billing
+                                        div.large-button
+                                            object(data='/static/Svg/button_partnerships.svg', type='image/svg+xml')
+                                    div.business-content
+                                        div.nav-text-header
+                                            p Partnerships benefits
+                                            ul.nav-text-list.circle-symbol
+                                                li Online Affiliate
+                                                li Become a reseller
+                                                li Technology Alliance
+                        li.download 
+                            a.submenu-link#download-link(href='/') DOWNLOAD
+                            div.submenu.hidden 
+                                div.full-width.twelve-column-grid
+                                    div.half-width
+                                        div.nav-icon
+                                            object(data='/static/Svg/download-home.svg', type='image/svg+xml')
+                                        div.nav-text-header
+                                            h4.align-center
+                                                a(href='/home/free-trial/', target='_blank') Download for home
+                                        div.large-button
+                                            object(data='/static/Svg/button-download-home.svg', type='image/svg+xml')
+                                    div.half-width
+                                        div.nav-icon
+                                            object(data='/static/Svg/download-business.svg', type='image/svg+xml')
+                                        div.nav-text-header
+                                            h4.align-center
+                                                a(href='/business/trial', target='_blank') Download for business
+                                        div.large-button
+                                            object(data='/static/Svg/button-download-business.svg', type='image/svg+xml')
+                        li.login
+                           a.link-login.without-submenu(href='/login', target='_blank') LOGIN
+                        //- li.login
+                        //-    a.link-login.without-submenu(href='/sign-up', target='_blank') SIGN UP
+                ul.right-nav
+                    li.right-nav-icons
+                        object(data='/static/Svg/support.svg', type='image/svg+xml')
+                       
+                    li.right-nav-icons
+                        object(data='/static/Svg/shopping-cart.svg', type='image/svg+xml')
+                       
+                    li.right-nav-icons
+                        object(data='/static/Svg/partner.svg', type='image/svg+xml')               
+    script
+      include JS/navbar.js

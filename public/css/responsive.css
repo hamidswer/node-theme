@@ -1,0 +1,416 @@
+/* ==============================Responsive============================= */
+@media only screen and (max-device-width: 1700px) and (orientation: portrait) {
+    .footer-row-1 {
+        grid-column: 2/-2;
+    }
+}
+
+@media only screen and (max-device-width: 1700px) and (orientation: landscape) {
+    .footer-row-1 {
+        grid-column: 2/-2;
+    }
+}
+
+@media only screen and (max-device-width: 1450px) and (orientation: portrait) {
+
+    .home .submenu-active {
+        left: -10.35rem;
+        width: 60rem;
+    }
+
+    .business .submenu-active {
+        left: -19.37rem;
+        width: 58rem;
+    }
+
+    .download .submenu-active {
+        left: -32rem;
+        width: 60rem;
+    }
+}
+
+@media only screen and (max-device-width: 1450px) and (orientation: landscape) {
+
+    .home .submenu-active {
+        left: -10.35rem;
+        width: 60rem;
+    }
+
+    .business .submenu-active {
+        left: -19.37rem;
+        width: 58rem;
+    }
+
+    .download .submenu-active {
+        left: -32rem;
+        width: 60rem;
+    }
+}
+
+/*--------------------------------------------------------------------------------*/
+@media only screen and (max-device-width: 1280px) and (orientation: portrait) {
+    .content .header-left-text {
+        grid-column: 3/-3;
+    }
+
+    .footer-row-1 {
+        grid-column: 2/-2;
+    }
+
+    .footer-2 {
+        grid-column-start: span 4;
+    }
+
+    .footer-3 {
+        grid-column-start: span 4;
+    }
+
+    .footer-4 {
+        grid-column-start: span 4;
+    }
+
+    .footer-5 {
+        grid-column-start: span 4;
+    }
+
+
+
+
+}
+
+@media only screen and (max-device-width: 1280px) and (orientation: landscape) {
+    .content .header-left-text {
+        grid-column: 3/-3;
+    }
+
+    .footer-row-1 {
+        grid-column: 2/-2;
+    }
+
+    .footer-2 {
+        grid-column-start: span 4;
+    }
+
+    .footer-3 {
+        grid-column-start: span 4;
+    }
+
+    .footer-4 {
+        grid-column-start: span 4;
+    }
+
+    .footer-5 {
+        grid-column-start: span 4;
+    }
+
+
+}
+
+/*--------------------------------------------------------------------------------*/
+@media only screen and (max-device-width: 1024px) and (orientation: portrait) {
+    .header .right-nav {
+        display: none;
+    }
+
+
+
+}
+
+@media only screen and (max-device-width: 1024px) and (orientation: landscape) {
+    .header .right-nav {
+        display: none;
+    }
+
+}
+
+/*--------------------------------------------------------------------------------*/
+@media only screen and (max-device-width: 1024px) and (orientation: portrait) {}
+
+@media only screen and (max-device-width: 1024px) and (orientation: landscape) {}
+
+/*--------------------------------------------------------------------------------*/
+@media only screen and (max-device-width: 800px) and (orientation: portrait) {
+    .small-button {
+        width: 16rem;
+    }
+
+    .content .header-right-box {
+        display: none;
+    }
+
+    .content .header-left-box {
+        grid-column: 1/-1;
+        transform: none;
+        padding: 6rem 0rem;
+    }
+
+    .content .header-left-text {
+        transform: none;
+    }
+
+    .leader-left {
+        grid-column: 1/-1;
+
+    }
+
+    .leader-right {
+        display: none;
+    }
+
+    .join-us-left {
+        display: none;
+    }
+
+    .join-us-center {
+        grid-column: 1/-1;
+        margin: auto 1rem;
+        text-align: center;
+    }
+
+    .join-us-center .small-button {
+        margin: auto;
+    }
+
+    .join-us-right {
+        display: none;
+    }
+
+
+    .cell-title-1 {
+        grid-column: 2/-2;
+        text-align: center;
+    }
+
+    .cell-title-3 {
+        display: none;
+    }
+
+    .cell-1 {
+        grid-column: 2/10;
+    }
+
+    .cell-3 {
+        grid-column: 10/-1;
+    }
+
+    .cell-2 {
+        display: none;
+    }
+
+    .cell-title-2 {
+        display: none;
+    }
+
+    .cell-4 {
+        display: none;
+    }
+
+    .cell-title-4 {
+        display: none;
+    }
+}
+
+@media only screen and (max-device-width: 800px) and (orientation: landscape) {
+    .content .header-right-box {
+        display: none;
+    }
+
+    .content .header-left-box {
+        grid-column: 1/-1;
+        transform: none;
+    }
+
+    .content .header-left-text {
+        transform: none;
+    }
+
+
+
+    .cell-title-1 {
+        grid-column: 2/-2;
+        text-align: center;
+    }
+
+    .cell-title-3 {
+        display: none;
+    }
+
+    .cell-1 {
+        grid-column: 2/10;
+    }
+
+    .cell-3 {
+        grid-column: 10/-1;
+    }
+
+    .cell-2 {
+        display: none;
+    }
+
+    .cell-title-2 {
+        display: none;
+    }
+
+    .cell-4 {
+        display: none;
+    }
+
+    .cell-title-4 {
+        display: none;
+    }
+}
+
+/*--------------------------------------------------------------------------------*/
+@media only screen and (max-device-width: 768px) and (orientation: portrait) {
+    .line {
+        display: none;
+    }
+
+    .join-us {
+        padding: 2rem 0rem;
+
+    }
+
+    .social-media-icons {
+        max-width: 4.75rem;
+    }
+
+    .black-bar {
+        padding: 2rem 0rem;
+    }
+
+    .black-bar-left {
+        grid-column: 1/-1;
+        grid-row: 1/2;
+        justify-self: center;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .black-bar-right {
+        grid-column: 1/-1;
+        grid-row: 2/3;
+    }
+
+    .content .about-company-homepage h1 {
+        font-size: 2.5rem;
+        line-height: 4.375rem;
+        padding-bottom: 2.5rem;
+    }
+}
+
+@media only screen and (max-device-width: 768px) and (orientation: landscape) {
+    .content .about-company-homepage h1 {
+        font-size: 2.5rem;
+        line-height: 4.375rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .header-left-box {
+        padding: 4rem 0rem;
+    }
+}
+
+/*--------------------------------------------------------------------------------*/
+@media only screen and (max-device-width: 720px) and (orientation: portrait) {}
+
+@media only screen and (max-device-width: 720px) and (orientation: landscape) {}
+
+/*--------------------------------------------------------------------------------*/
+@media only screen and (max-device-width: 600px) and (orientation: portrait) {
+    .small-button {
+        width: 18rem;
+    }
+
+
+    .footer-2 {
+        grid-column-start: span 8;
+    }
+
+    .footer-3 {
+        grid-column-start: span 8;
+    }
+
+    .footer-4 {
+        grid-column-start: span 8;
+    }
+
+    .footer-5 {
+        grid-column-start: span 8;
+    }
+
+    .cell-1 {
+        grid-column: 2/8;
+    }
+
+    .cell-3 {
+        grid-column: 8/-1;
+    }
+
+
+    .social-media-icons {
+        max-width: 5.75rem;
+    }
+}
+
+@media only screen and (max-device-width: 600px) and (orientation: landscape) {
+    .footer-2 {
+        grid-column-start: span 8;
+    }
+
+    .footer-3 {
+        grid-column-start: span 8;
+    }
+
+    .footer-4 {
+        grid-column-start: span 8;
+    }
+
+    .footer-5 {
+        grid-column-start: span 8;
+    }
+}
+
+/*--------------------------------------------------------------------------------*/
+@media only screen and (max-device-width: 480px) and (orientation: portrait) {
+    .small-button {
+        width: 20rem;
+    }
+}
+
+@media only screen and (max-device-width: 480px) and (orientation: landscape) {}
+
+/*--------------------------------------------------------------------------------*/
+@media only screen and (max-device-width: 320px) and (orientation: portrait) {
+
+    .small-button {
+        width: 24rem;
+    }
+
+    .cell-title-1 h1 {
+        font-size: 0.5rem;
+    }
+
+    .social-media-icons {
+        max-width: 6.75rem;
+    }
+}
+
+@media only screen and (max-device-width: 320px) and (orientation: landscape) {}
+
+@media only screen and (max-device-width: 240px) and (orientation: portrait) {
+    .small-button {
+        width: 24rem;
+    }
+
+    .content .header-left-text {
+        grid-column: 2/-2;
+    }
+
+
+
+}
+
+@media only screen and (max-device-width: 240px) and (orientation: landscape) {}
+
+/*--------------------------------------------------------------------------------*/

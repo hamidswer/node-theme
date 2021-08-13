@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 661.1 641"><defs><style>.cls-1{fill:#fff;}.cls-2{fill:#151515;opacity:0.01;}.cls-3{fill:url(#down-up);}.cls-4{fill:url(#up-down);}</style></defs><g id="enterprise_layer"><g id="enterprise_layer_group"><defs>
+    <linearGradient id="down-up" x1="0" x2="0" y1="1" y2="0">
+      <stop offset="0" stop-color="#b8eeb7">
+        <animate dur="0.75s" attributeName="offset" fill="freeze" from="0" to="1" begin="maskam.mouseover"/>
+      </stop>
+      <stop offset="0" stop-color="#FFFFFF" x1="0" x2="0" y1="1" y2="0">
+        <animate dur="0.75s" attributeName="offset" fill="freeze" from="0" to="1" begin="maskam.mouseover"/>
+      </stop>
+    </linearGradient>
+</defs>
+<defs>
+    <linearGradient id="up-down" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF">
+        <animate dur="2.25s" attributeName="offset" fill="freeze" from="0" to="1" begin="maskam.mouseover"/>
+      </stop>
+      <stop offset="0" stop-color="#b8eeb7" x1="0" x2="0" y1="0" y2="1">
+        <animate dur="2.25s" attributeName="offset" fill="freeze" from="0" to="1" begin="maskam.mouseover"/>
+      </stop>
+    </linearGradient>
+</defs><polygon class="cls-1" points="431.8 458.3 431.8 443.5 319.8 396.8 197.7 449.8 197.7 467.9 319.8 414.8 431.8 458.3"/><polygon class="cls-1" points="197.8 559.8 197.8 577.8 320 524.8 431.9 568.3 431.9 553.4 320 506.8 197.8 559.8"/><polygon class="cls-1" points="198 485.7 198 503.7 320.2 450.7 432.2 494.2 432.2 479.3 320.2 432.7 198 485.7"/><polygon class="cls-1" points="431.7 530.9 431.7 516 319.7 469.4 197.6 522.4 197.6 540.4 319.7 487.4 431.7 530.9"/><polygon class="cls-1" points="189.7 499.6 189.7 488.9 112.8 455.3 29 493.5 29 506.5 112.8 468.3 189.7 499.6"/><polygon class="cls-1" points="189.8 446.2 189.8 435.5 113 401.9 29.1 440.1 29.1 453.1 113 414.9 189.8 446.2"/><polygon class="cls-1" points="29.3 467 29.3 480 113.1 441.8 190 473.1 190 462.4 113.1 428.8 29.3 467"/><polygon class="cls-1" points="189.9 393.5 189.9 382.9 113 349.2 29.2 387.4 29.2 400.4 113 362.2 189.9 393.5"/><polygon class="cls-1" points="29.4 413.6 29.4 426.6 113.3 388.4 190.2 419.7 190.2 409.1 113.3 375.4 29.4 413.6"/><polygon class="cls-1" points="431.5 605 431.5 590.1 319.5 543.5 197.3 596.5 197.3 614.5 319.5 561.5 431.5 605"/><polygon class="cls-1" points="432.4 237 432.4 222.1 320.4 175.5 198.3 228.5 198.3 246.5 320.4 193.5 432.4 237"/><polygon class="cls-1" points="239.1 152.7 239.1 165.1 320.5 128.6 395.2 158.5 395.2 148.3 320.5 116.1 239.1 152.7"/><polygon class="cls-1" points="394.9 133.5 394.9 123.2 320.3 91 238.9 127.6 238.9 140 320.3 103.5 394.9 133.5"/><polygon class="cls-1" points="260 75.2 260 84 320.2 58.1 375.3 79.4 375.3 72.1 320.2 49.3 260 75.2"/><polygon class="cls-1" points="375.2 61.6 375.2 54.3 320 31.5 259.8 57.4 259.8 66.3 320 40.3 375.2 61.6"/><polygon class="cls-1" points="198.4 339 198.4 357 320.5 304 432.5 347.5 432.5 332.6 320.5 286 198.4 339"/><polygon class="cls-1" points="198.5 265.9 198.5 283.9 320.7 230.9 432.7 274.4 432.7 259.6 320.7 212.9 198.5 265.9"/><polygon class="cls-1" points="432.1 384.2 432.1 369.3 320.1 322.7 197.9 375.7 197.9 393.7 320.1 340.7 432.1 384.2"/><polygon class="cls-1" points="198.2 413.1 198.2 431.1 320.3 378.1 432.3 421.6 432.3 406.8 320.3 360.1 198.2 413.1"/><polygon class="cls-1" points="432.2 311.1 432.2 296.3 320.2 249.6 198 302.6 198 320.7 320.2 267.6 432.2 311.1"/><polygon class="cls-1" points="545.2 586.5 475.2 615.7 404.9 615.7 315.8 586.5 233.6 615.7 189.4 615.7 109.8 586.5 36.2 615.7 1.7 615.7 1.7 634.6 659.4 634.6 659.4 615.7 633.2 615.7 545.2 586.5"/><polygon class="cls-1" points="29.2 519.3 29.2 532.3 113 494.1 189.9 525.4 189.9 514.7 113 481.1 29.2 519.3"/><polygon class="cls-1" points="637.9 603.3 637.9 590.7 542.9 551 439.3 596.1 439.3 611.4 542.9 566.3 637.9 603.3"/><polygon class="cls-1" points="638.2 478.6 638.2 466 543.2 426.3 439.6 471.4 439.6 486.7 543.2 441.7 638.2 478.6"/><polygon class="cls-1" points="638.4 415.6 638.4 403 543.4 363.3 439.8 408.4 439.8 423.7 543.4 378.6 638.4 415.6"/><polygon class="cls-1" points="638.5 353.5 638.5 340.8 543.5 301.2 439.9 346.3 439.9 361.6 543.5 316.5 638.5 353.5"/><polygon class="cls-1" points="260 39.5 260 48.3 320.2 22.3 375.4 43.6 375.4 36.4 320.2 13.5 260 39.5"/><polygon class="cls-1" points="198.8 191.8 198.8 209.8 320.9 156.8 432.9 200.3 432.9 185.4 320.9 138.8 198.8 191.8"/><polygon class="cls-1" points="239.2 102.3 239.2 114.7 320.6 78.2 395.2 108.1 395.2 97.9 320.6 65.7 239.2 102.3"/><polygon class="cls-1" points="638.1 540.3 638.1 527.7 543.1 488 439.5 533.1 439.5 548.4 543.1 503.3 638.1 540.3"/><polygon class="cls-1" points="439.7 564.9 439.7 580.2 543.3 535.1 638.3 572.1 638.3 559.5 543.3 519.8 439.7 564.9"/><polygon class="cls-1" points="29 572.7 29 585.7 112.9 547.5 189.8 578.8 189.8 568.1 112.9 534.5 29 572.7"/><polygon class="cls-1" points="189.4 605.3 189.4 594.6 112.6 561 28.7 599.1 28.7 612.1 112.6 573.9 189.4 605.3"/><polygon class="cls-1" points="189.6 551.9 189.6 541.2 112.7 507.6 28.9 545.8 28.9 558.7 112.7 520.5 189.6 551.9"/><polygon class="cls-1" points="638.9 322.3 638.9 309.6 543.9 270 440.3 315 440.3 330.4 543.9 285.3 638.9 322.3"/><polygon class="cls-1" points="543.8 332.1 440.2 377.2 440.2 392.5 543.8 347.4 638.8 384.4 638.8 371.8 543.8 332.1"/><polygon class="cls-1" points="543.5 456.8 439.9 501.9 439.9 517.2 543.5 472.1 638.5 509.1 638.5 496.5 543.5 456.8"/><polygon class="cls-1" points="543.6 395.1 440 440.2 440 455.5 543.6 410.4 638.6 447.4 638.6 434.8 543.6 395.1"/></g></g><g id="maskam"><circle id="mask" class="cls-2" cx="330.5" cy="324.1" r="466.7"/></g><script type="text/javascript">
+const path = document.querySelectorAll("polygon");
+const mask = document.querySelector("#mask");
+mask.addEventListener("mouseover", function(e){
+    path.forEach(function(e){
+    e.classList.remove("cls-1");
+    e.classList.remove("cls-4");
+    e.classList.add("cls-3");
+    }) 
+});
+mask.addEventListener("mouseout", function(e){
+    path.forEach(function(e){
+    e.classList.remove("cls-1");
+    e.classList.remove("cls-3");
+    e.classList.add("cls-4");
+    }) 
+});
+</script></svg>

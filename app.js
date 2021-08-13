@@ -34,7 +34,7 @@ app.set('views', path.join(__dirname, viewsLoc))
 // app.use(helmet())
 //  rate limiter 100 request per 10 minutes
 const limiter = rateLimit({
-  max: 100,
+  max: 10000,
   //  milisecounds
   windowMs: 10 * 60 * 1000,
   message: tooMuchRequest
@@ -66,12 +66,14 @@ if (process.env.NODE_ENV === 'development') {
 }
 app.use(express.json())
 
+const { homepageHeadTitleText } = require('./templateData')
+
 app.get(rootUrl, (req, res) => {
   res.status(200).render('base', {
-    title: 'this is the title',
-    description: 'this is description'
+    homepageHeadTitleText
   })
 })
+
 app.use(userRouterUrl, userRouter)
 app.use(postRouterUrl, postRouter)
 app.use(reviewRouterUrl, reviewRouter)
