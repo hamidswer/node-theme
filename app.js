@@ -29,7 +29,7 @@ const reviewRouter = require(`./${reviewRouterLoc}`)
 const path = require('path')
 app.set('view engine', 'pug')
 app.set('views', path.join(__dirname, viewsLoc))
-app.use(express.static(path.join(__dirname, 'public'))
+app.use('/static', express.static(path.join(__dirname, 'public')))
 // Security
 app.use(helmet())
 //  rate limiter 100 request per 10 minutes
