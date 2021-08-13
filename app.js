@@ -31,7 +31,7 @@ app.use('/static', express.static(path.join(__dirname, 'public')))
 app.set('view engine', 'pug')
 app.set('views', path.join(__dirname, viewsLoc))
 // Security
-app.use(helmet())
+// app.use(helmet())
 //  rate limiter 100 request per 10 minutes
 const limiter = rateLimit({
   max: 100,
