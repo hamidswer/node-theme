@@ -1,0 +1,14 @@
+doctype html
+html
+    head
+        title Main page #{title}
+        link(rel='stylesheet' href='css/style.css')
+        link(rel='shortcut icon' type='image/svg+xml' href='img/bookmark.svg')
+
+    body
+        h1 this is the first title written without using variables 
+        p this is description
+        h1=title 
+        p=description.toUpperCase()
+        - const x = 'hello'
+        h2=x
