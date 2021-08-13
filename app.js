@@ -27,9 +27,9 @@ const { tooMuchRequest } = require('./projectDataError')
 const { errorController, notFound } = require(`./${errorControllerLoc}`)
 const reviewRouter = require(`./${reviewRouterLoc}`)
 const path = require('path')
-// app.set('view engine', 'pug')
-// app.set('views', path.join(__dirname, viewsLoc))
 app.use('/static', express.static(path.join(__dirname, 'public')))
+app.set('view engine', 'pug')
+app.set('views', path.join(__dirname, viewsLoc))
 // Security
 app.use(helmet())
 //  rate limiter 100 request per 10 minutes
