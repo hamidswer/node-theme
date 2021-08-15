@@ -1,0 +1,16 @@
+extends base
+block content 
+    div.post-cards
+        span.all-posts-cards 
+            each post in posts
+                span.post-card
+                    img.post-card-img(src=`/static/img/${post.imageURL}`, alt=`${post.imageURL.replace('/img/', '').replace('.jpg', '')}`)
+                    h4.post-card-tag=`${post.cookTime}`
+                    h3.post-card-title-1=`${post.name.split(' ').slice(0,2).join(' ')}`
+                    h5.post-card-description=`${post.steps.join().split(' ').slice(0,10).join(' ')} ...`
+                    a.post-card-source(href=`posts/${post.slug}`, target='_blank')
+                        span.post-card-footer 
+                            h5.post-card-rating=`${post.ratingsAverage} (${post.ratingsQuantity} votes)`
+                            h5.post-card-location=`${post.location.description}`
+                            h6.post-card-details Read more 
+            

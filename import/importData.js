@@ -40,7 +40,7 @@ const posts = JSON.parse(
 // )
 const importData = async () => {
   try {
-    await PostModel.create(posts)
+    await PostModel.create(posts, { validateBeforeSave: false })
     // we should stop validation to import users which we had
     // await UserModel.create(users, {validateBeforeSave: false})
     // await ReviewModel.create(reviews)

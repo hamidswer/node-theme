@@ -13,6 +13,7 @@ exports.errorControllerLoc = 'controllers/errorController'
 exports.userControllerLoc = 'controllers/userController'
 exports.authControllerLoc = 'controllers/authController'
 exports.reviewControllerLoc = 'controllers/reviewController'
+exports.viewControllerLoc = 'controllers/viewController'
 
 exports.postModelLoc = 'models/postModel'
 exports.userModelLoc = 'models/userModel'
@@ -28,6 +29,7 @@ exports.importUsersLoc = 'data/users.json'
 exports.postRouterLoc = 'routes/postRoutes'
 exports.userRouterLoc = 'routes/userRoutes'
 exports.reviewRouterLoc = 'routes/reviewRoutes'
+exports.viewRouterLoc = 'routes/viewRoutes'
 
 exports.apiFeaturesLoc = 'utils/apiFeatures'
 exports.appErrorLoc = 'utils/appError'
@@ -44,7 +46,8 @@ exports.messageOneEmail =
 exports.messageTwoEmail =
   '\nIf you did not forget your password, please ignore this email!'
 
-// URLs
+// ---------------------------------------- URLs
+// ------------URLs => API
 exports.rootUrl = '/'
 exports.idUrl = '/:id'
 exports.postRouterUrl = '/posts'
@@ -63,6 +66,11 @@ exports.deleteMeUrl = '/deleteMe'
 exports.resetPasswordUrl = '/users/resetPassword/'
 exports.nearMeUrl = '/near-me/:distance/center/:latlng/unit/:unit'
 exports.distancesFromMeUrl = '/distances/:latlng/unit/:unit'
+
+// ------------URLs => Views
+exports.homeUrl = '/'
+exports.overviewUrl = '/overview'
+exports.postUrl = '/posts/:slug'
 //  Notes
 //  getStats should write individually for any project based on JSON file ./controllers
 //  model should write individually for any project based on JSON file ./models

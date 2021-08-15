@@ -1,0 +1,17 @@
+extends base
+block content
+    div.post-container 
+        h1.post-title-1=`${post.name}`
+        img.post-image(src=`/static/img/${post.imageURL}`)
+        span.all-posts 
+            div.post-steps
+                h2.post-title-2 Recepie
+                each step, index in post.steps
+                    h3.post-step=`Step ${index+1}: ${step}`
+            div.post-ingredients
+                h2.post-title-3 Ingredient
+                each ingredient in post.ingredients
+                    div.ingredient 
+                        h4.ingredient-name=`${ingredient.name.split(' ').slice(0,3).join(' ')}` 
+                        h4.ingredient-quantity=`${ingredient.quantity}`
+                    

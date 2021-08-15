@@ -20,12 +20,13 @@ const {
   reviewRouterUrl,
   parameterPollutionWhitelist,
   viewsLoc,
-  rootUrl
+  viewRouterLoc,
+  homeUrl
 } = require('./projectData')
 
 const { tooMuchRequest } = require('./projectDataError')
 const { errorController, notFound } = require(`./${errorControllerLoc}`)
-const reviewRouter = require(`./${reviewRouterLoc}`)
+
 const path = require('path')
 app.use('/static', express.static(path.join(__dirname, 'public')))
 app.set('view engine', 'pug')
@@ -60,20 +61,14 @@ app.use(
 // Route
 const postRouter = require(`./${postRouterLoc}`)
 const userRouter = require(`./${userRouterLoc}`)
+const reviewRouter = require(`./${reviewRouterLoc}`)
+const viewRouter = require(`./${viewRouterLoc}`)
 
 if (process.env.NODE_ENV === 'development') {
   app.use(morgan('dev'))
 }
 app.use(express.json())
-
-const { homepageHeadTitleText } = require('./templateData')
-
-app.get(rootUrl, (req, res) => {
-  res.status(200).render('base', {
-    homepageHeadTitleText
-  })
-})
-
+app.use(homeUrl, viewRouter)
 app.use(userRouterUrl, userRouter)
 app.use(postRouterUrl, postRouter)
 app.use(reviewRouterUrl, reviewRouter)
