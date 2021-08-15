@@ -260,6 +260,11 @@ strong {
   transform: perspective(2500px) rotateX(32deg) scale(1);
   transition:0.5s ease all;
   min-height: 28rem;
+  background-color: #fdfdfd	;
+  border-top: 3px solid #f1f1f1;
+  border-left: 3px solid #f1f1f1;
+  border-right: 3px solid #f1f1f1;
+  border-bottom: 1px solid #f1f1f1;
 }
 
 .post-card:hover, .post-card:active {
@@ -365,8 +370,8 @@ strong {
 }
 .post-card-details {
   position: absolute;
-  right: 4px;
-  bottom: -4px;
+  right: 7px;
+  bottom: -10px;
   border-radius: 5px;
   padding: 6px;
   font-size: 0.85rem;
