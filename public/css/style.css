@@ -9,13 +9,16 @@
   list-style-type: none;
   position: relative;
   font-family: "Poppins-Regular";
-  color: #ffffff;
+  color: #3a3a3acc;
   font-weight: 200;
 }
-
+html {
+  background-color: rgb(236, 236, 236);
+}
 body {
-  background: #383838	;
-
+  max-width: 80rem;
+  margin: auto;
+  background-color: white;
 }
 
 /* ===================================================================== */
@@ -223,166 +226,8 @@ strong {
 
 /* ===================================================================== */
 
-/* ==============================Animation============================== */
+/* ============================== ============================== */
 
-
-
-/* ===============================Upper Level=========================== */
-* {
-  box-sizing: border-box;
-  vertical-align: baseline;
-  margin: 0;
-  padding: 0;
-  font-size: 100%;
-  text-decoration: none;
-  list-style-type: none;
-  position: relative;
-  font-family: "Poppins-Regular";
-  color: #ffffff;
-  font-weight: 200;
-}
-
-body {
-  background: #383838	;
-
-}
-
-/* ===================================================================== */
-/* ===============================Font/Text============================= */
-
-/* font import */
-@font-face {
-  font-family: "Poppins-Bold";
-  src: url("../Fonts/Poppins/Poppins-Bold.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Poppins-BoldItalic";
-  src: url("../Fonts/Poppins/Poppins-BoldItalic.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Poppins-ExtraBold";
-  src: url("../Fonts/Poppins/Poppins-ExtraBold.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Poppins-ExtraBoldItalic";
-  src: url("../Fonts/Poppins/Poppins-ExtraBoldItalic.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Poppins-ExtraLight";
-  src: url("../Fonts/Poppins/Poppins-ExtraLight.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Poppins-ExtraLightItalic";
-  src: url("../Fonts/Poppins/Poppins-ExtraLightItalic.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Poppins-Italic";
-  src: url("../Fonts/Poppins/Poppins-Italic.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Poppins-Light";
-  src: url("../Fonts/Poppins/Poppins-Light.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Poppins-LightItalic";
-  src: url("../Fonts/Poppins/Poppins-LightItalic.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Poppins-Medium";
-  src: url("../Fonts/Poppins/Poppins-Medium.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Poppins-MediumItalic";
-  src: url("../Fonts/Poppins/Poppins-MediumItalic.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Poppins-Regular";
-  src: url("../Fonts/Poppins/Poppins-Regular.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Poppins-SemiBold";
-  src: url("../Fonts/Poppins/Poppins-SemiBold.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Poppins-SemiBoldItalic";
-  src: url("../Fonts/Poppins/Poppins-SemiBoldItalic.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Poppins-Thin";
-  src: url("../Fonts/Poppins/Poppins-Thin.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Poppins-ThinItalic";
-  src: url("../Fonts/Poppins/Poppins-ThinItalic.ttf") format("truetype");
-}
-
-/* font  */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-span {
-  display: block;
-}
-
-h1 {
-  font-size: 2.5rem;
-  margin: 1rem 0rem;
-  font-family: "Poppins-Bold";
-}
-ul>li {
-  font-size: 0.75rem;
-
-}
-
-h2 {
-  font-size: 2rem;
-  margin: 1rem 0rem;
-  font-family: "Poppins-Bold";
-}
-
-h3 {
-  font-size: 1.5rem;
-  margin: 0.75rem 0rem;
-}
-
-h4 {
-  font-size: 1rem;
-  margin: 0.5rem 0rem;
-}
-
-h5 {
-  font-size: 0.83rem;
-  margin: 0.4rem 0rem;
-}
-
-span {
-  font-size: 1.125rem;
-  margin: 0.86rem 0rem;
-}
-
-p {
-  font-size: 1rem;
-  margin: 0.5rem 0rem;
-}
 
 
 /*========================================================================= */
@@ -401,6 +246,8 @@ p {
   overflow: hidden; 
   text-align: center;
   position: relative;
+  margin-top: 10rem;
+
 }
 
 .post-card {
@@ -409,17 +256,16 @@ p {
   overflow: hidden;
   margin: 0rem 1.5rem;
   position:relative;
-  background-color: white;
   border-radius: 10px;
   transform: perspective(2500px) rotateX(32deg) scale(1);
   transition:0.5s ease all;
   min-height: 28rem;
-  
 }
 
 .post-card:hover, .post-card:active {
   transform: rotate(0deg) scale(1);
 }
+
 
 .post-card-source {
   display: inline-block;
@@ -439,10 +285,11 @@ p {
   top: 0px;
   left: 0px;
   padding: 10px;
-  background-color: #00a170;
+  background-color: #d23838;
   border-bottom-right-radius: 10px;
   border-top-right-radius: 10px;
-  opacity: 0.65;
+  opacity: 0.85;
+  color:#ffffff;
 }
 
 .post-card-title-1 {
@@ -466,55 +313,75 @@ p {
   word-wrap: break-word;
 }
 .post-card-footer {
-  background-color: #56C792;
-  background-image: linear-gradient(132deg, #56C792 0%, #0C977B 30%);
+  background-color: #d23838;
+  background-image: linear-gradient(132deg,  #d23838  40%, #e6977f 100%);
   opacity: 0.95;
   padding: 0.5rem 0rem;
   position: absolute;
   bottom: 0rem;
   left: 0rem;
   width: 15rem;
+  z-index: 3;
+}
+.post-card-footer:hover, .post-card-footer:active {
+  background-image: linear-gradient(132deg, #e6977f,#d23838 );
+  animation: gradient 5s ease infinite;
+  background-size: 300% 300%;
 }
 
-.post-card-location {
-  text-align: left;
-  padding-left: 10px; 
-  font-size: 0.75rem;
+@keyframes gradient {
+	0% {
+		background-position: 80% 100%;
+	}
+	50% {
+		background-position: 0% 100%;
+	}
+	100% {
+		background-position: 80% 100%;
+	}
 }
-
-.post-card-location::before {
-  content: '☀  ';
-  font-size: 1rem;
-  color: #f3c141;
-}
-
 .post-card-rating {
   text-align: left;
   padding-left: 10px; 
   font-size: 0.75rem;
+  color:#ffffff;
+
 }
 
 .post-card-rating::before {
-  content: '✌  ';
+  content: '💚  ';
+  font-size: 1rem;
+}
+.post-card-location {
+  text-align: left;
+  padding-left: 10px; 
   font-size: 0.75rem;
+  color:#ffffff;
 }
 
+.post-card-location::before {
+  content: '🥦  ';
+  font-size: 1rem;
+}
 .post-card-details {
   position: absolute;
-  right: 10px;
-  bottom: 10px;
+  right: 4px;
+  bottom: -4px;
   border-radius: 5px;
   padding: 6px;
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   font-family: "Poppins-Regular";
   border: 0.5px solid white;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.308);
+  box-shadow: 4px 4px 4px rgba(65, 65, 65, 0.74);
+  color:#1a1a1a;
+  background-color: #f2fff4;
 }
 
 #stop-mask:hover,#play-mask:hover,#previous-mask:hover,#next-mask:hover {
   fill: rgb(65, 65, 65);
   opacity: 0.25;
 }
+
 
 /*========================================================================= */
 
@@ -523,23 +390,18 @@ p {
   display: grid;
   grid-row: 2/3;
   grid-column: 1/-1;
-  justify-items: center;
-  justify-self: center;
-}
-.post-image {
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  height: 100vh;
-  width: 100vw;
-  opacity: 0.15;
+  /* justify-items: center;
+  justify-self: center; */
+  padding-top: 10rem;
+  max-width: 80rem;
+  margin: auto;
 }
 
 .all-posts {
   display: block;
   overflow: hidden; 
-  width: 100vw;
-  text-align: center;
+  text-align: left;
+  margin: auto;
 }
 .post-steps {
   display: inline-block;
@@ -549,6 +411,7 @@ p {
   position:relative;
   vertical-align:top;
   text-align: left;
+  max-width: 40rem;
   
 }
 .post-ingredients {
@@ -558,6 +421,8 @@ p {
   position:relative;
   vertical-align:top;
   text-align: right;
+  margin: 0rem 1.5rem 1rem 1.5rem;
+
 }
 .ingredient {
   position: relative;
@@ -565,11 +430,17 @@ p {
   height: 3rem;
   border: 2px solid rgba(255, 255, 255, 0.205);
   border-radius: 8px;
-  background-color: rgba(56, 42, 24, 0.534);
+  background-color: #d23838;
   margin-bottom: 0.25rem;
+}
+.post-image {
+  width: 100%;
+  max-width: 30rem;
+  margin: auto;
 }
 .post-title-1 {
   text-align: center;
+
 }
 .post-title-2 {
   text-align: left;
@@ -586,6 +457,7 @@ p {
   top: 0px;
   left: 0px;
   padding-left: 1rem;
+  color: white;
 }
 .ingredient-quantity {
   display: inline-block;
@@ -593,4 +465,5 @@ p {
   top: 0px;
   right: 0px;
   padding-right: 1rem;
+  color: white;
 }
