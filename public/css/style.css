@@ -527,7 +527,7 @@ p {
   justify-self: center;
 }
 .post-image {
-  position: absolute;
+  position: fixed;
   top: 0px;
   left: 0px;
   height: 80vh;
