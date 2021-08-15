@@ -1,11 +1,12 @@
 div.header
-    nav.navbar.inline.navbar-back
-        ul.main-nav
+    div.navbar
+        ul.left-nav
             li.company-logo
                 a.logo(href='/overview')
             li.download 
-                a.link-login.without-submenu(href='/overview') Recipes
+                a.no-submenu(href='/overview') Recipes
+        ul.right-nav
             li.login
-                a.link-login.without-submenu(href='/overview') LOGIN
+                a.no-submenu.no-submenu-right(href='/overview') LOGIN
             li.login
-               a.link-login.without-submenu(href='/overview') SIGN UP 
+               a.no-submenu.no-submenu-right(href='/overview') SIGN UP 
