@@ -310,11 +310,11 @@ strong {
 .post-card-description {
   font-family: "Poppins-Regular";
   font-size: 1rem;
-  text-align: center;
+  text-align: left;
   color: #000000;
   z-index: 4;
   margin-top: -10px;
-  padding: 0.25rem;
+  padding: 0.5rem;
   word-wrap: break-word;
 }
 .post-card-footer {
@@ -424,20 +424,10 @@ strong {
   max-width: 80rem;
   overflow: hidden;
   position:relative;
-  vertical-align:top;
   text-align: right;
   margin: 0rem 1.5rem 1rem 1.5rem;
+}
 
-}
-.ingredient {
-  position: relative;
-  width: 18rem;
-  height: 3rem;
-  border: 2px solid rgba(255, 255, 255, 0.205);
-  border-radius: 8px;
-  background-color: #d23838;
-  margin-bottom: 0.25rem;
-}
 .post-image {
   width: 100%;
   max-width: 30rem;
@@ -445,7 +435,7 @@ strong {
 }
 .post-title-1 {
   text-align: center;
-
+  
 }
 .post-title-2 {
   text-align: left;
@@ -455,6 +445,15 @@ strong {
 }
 .post-step {
   margin-bottom: 1rem;
+}
+.ingredient {
+  position: relative;
+  width: 18rem;
+  height: 2.75rem;
+  border: 2px solid rgba(255, 255, 255, 0.205);
+  border-radius: 8px;
+  background-color: #d23838;
+  margin-bottom: 0.25rem;
 }
 .ingredient-name {
   display: inline-block;
@@ -471,4 +470,23 @@ strong {
   right: 0px;
   padding-right: 1rem;
   color: white;
+}
+.post-title-4 {
+  text-align: left;
+  margin-top: 2rem;
+}
+.social-media-bar {
+  margin: 0.25rem 0rem;
+}
+.social-media-icon {
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
+  z-index: 5;
+  vertical-align: middle;
+
+}
+.social-media-label {
+  display: inline-block;
+  padding-left: 1rem;
 }
