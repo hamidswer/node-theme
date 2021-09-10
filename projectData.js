@@ -1,5 +1,6 @@
 // projects names
 exports.itemName = 'post'
+exports.homepageHeadTitleText = 'True Food Kitchen | Recipes megazine'
 
 // DB names
 exports.databaseOne = 'posts'
@@ -7,34 +8,34 @@ exports.databaseTwo = 'users'
 exports.databaseThree = 'review'
 // File Locations
 
-exports.handlerLoc = 'controllers/handler'
-exports.postControllerLoc = 'controllers/postController'
-exports.errorControllerLoc = 'controllers/errorController'
-exports.userControllerLoc = 'controllers/userController'
-exports.authControllerLoc = 'controllers/authController'
-exports.reviewControllerLoc = 'controllers/reviewController'
-exports.viewControllerLoc = 'controllers/viewController'
+exports.handlerLoc = '1-controllers/handler'
+exports.postControllerLoc = '1-controllers/postController'
+exports.errorControllerLoc = '1-controllers/errorController'
+exports.userControllerLoc = '1-controllers/userController'
+exports.authControllerLoc = '1-controllers/authController'
+exports.reviewControllerLoc = '1-controllers/reviewController'
+exports.viewControllerLoc = '1-controllers/viewController'
 
-exports.postModelLoc = 'models/postModel'
-exports.userModelLoc = 'models/userModel'
-exports.reviewModelLoc = 'models/reviewModel'
+exports.postModelLoc = '2-models/postModel'
+exports.userModelLoc = '2-models/userModel'
+exports.reviewModelLoc = '2-models/reviewModel'
 
-exports.routerStaticLoc = 'public'
-exports.viewsLoc = 'views'
+exports.routerStaticLoc = 'c-public'
+exports.viewsLoc = 'a-views'
 
-exports.importPostLoc = 'data/posts.json'
-exports.importReviewsLoc = 'data/reviews.json'
-exports.importUsersLoc = 'data/users.json'
+exports.importPostLoc = 'zOthers/data/posts.json'
+exports.importReviewsLoc = 'zOthers/data/reviews.json'
+exports.importUsersLoc = 'zOthers/data/users.json'
 
-exports.postRouterLoc = 'routes/postRoutes'
-exports.userRouterLoc = 'routes/userRoutes'
-exports.reviewRouterLoc = 'routes/reviewRoutes'
-exports.viewRouterLoc = 'routes/viewRoutes'
+exports.postRouterLoc = '0-routes/postRoutes'
+exports.userRouterLoc = '0-routes/userRoutes'
+exports.reviewRouterLoc = '0-routes/reviewRoutes'
+exports.viewRouterLoc = '0-routes/viewRoutes'
 
-exports.apiFeaturesLoc = 'utils/apiFeatures'
-exports.appErrorLoc = 'utils/appError'
-exports.cathcAsyncLoc = 'utils/catchAsync'
-exports.sendEmailLoc = 'utils/email'
+exports.apiFeaturesLoc = 'b-utils/apiFeatures'
+exports.appErrorLoc = 'b-utils/appError'
+exports.cathcAsyncLoc = 'b-utils/catchAsync'
+exports.sendEmailLoc = 'b-utils/email'
 
 exports.configLoc = 'config.env'
 
@@ -52,12 +53,12 @@ exports.rootUrl = '/'
 exports.idUrl = '/:id'
 exports.postRouterUrl = '/posts'
 exports.statsUrl = '/stats'
-exports.topFiveUrl = '/top-5'
 exports.meUrl = '/me'
 exports.userRouterUrl = '/users'
 exports.reviewRouterUrl = '/reviews'
 exports.signupUrl = '/signup'
 exports.loginUrl = '/login'
+exports.logoutUrl = '/logout'
 exports.forgotPasswordUrl = '/forgotPassword'
 exports.resetPasswordTokenUrl = '/resetPassword/:token'
 exports.updateMyPasswordUrl = '/updateMyPassword'
@@ -72,7 +73,7 @@ exports.homeUrl = '/'
 exports.overviewUrl = '/overview'
 exports.postUrl = '/posts/:slug'
 //  Notes
-//  getStats should write individually for any project based on JSON file ./controllers
+//  getStats should write individually for any project based on JSON file ./0-controllers
 //  model should write individually for any project based on JSON file ./models
 
 exports.parameterPollutionWhitelist = [

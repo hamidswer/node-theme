@@ -7,11 +7,12 @@ const mongoSanitize = require('express-mongo-sanitize')
 const xss = require('xss-clean')
 const hpp = require('hpp')
 const app = express()
+const cookieParser = require('cookie-parser')
 
 // Import project data and internal modules
 const {
-  postRouterLoc,
   routerStaticLoc,
+  postRouterLoc,
   reviewRouterLoc,
   errorControllerLoc,
   userRouterLoc,
@@ -28,7 +29,7 @@ const { tooMuchRequest } = require('./projectDataError')
 const { errorController, notFound } = require(`./${errorControllerLoc}`)
 
 const path = require('path')
-app.use('/static', express.static(path.join(__dirname, 'public')))
+app.use('/static', express.static(path.join(__dirname, routerStaticLoc)))
 app.set('view engine', 'pug')
 app.set('views', path.join(__dirname, viewsLoc))
 // Security
@@ -41,9 +42,12 @@ const limiter = rateLimit({
   message: tooMuchRequest
 })
 app.use('/', limiter)
+app.use(cookieParser())
 
 // Limit the amount of data coming from body maximum 10kb
+
 app.use(express.json({ limit: '10kb' }))
+app.use(express.urlencoded({ extended: true, limit: '10kb' }))
 
 // Data sanitization against noSQL query injection
 app.use(mongoSanitize())

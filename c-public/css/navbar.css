@@ -1,0 +1,170 @@
+/* =========================Display/Position/z-index==================== */
+.header {
+  position: relative;
+  max-width: 80rem;
+  margin: auto;
+  height: 5rem;
+  margin-bottom: 3rem;
+}
+
+.navbar {
+  position: absolute;
+  top: 0rem;
+  height: 16rem;
+  max-width: 80rem;
+  margin: auto;
+  width: 100vw;
+  background-image: url(../Svg/wave.png), linear-gradient(180deg,#006994 100%, #ffffff 20%);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  animation: gradient 40s ease infinite;
+
+}
+
+.navbar>ul>li {
+  display: inline-block;
+  vertical-align: middle;
+
+}
+.no-submenu {
+  color: #ffffff;
+}
+.loggout {
+  padding-left: 10px;
+}
+.navbar>ul>li>a {
+  display: inline-block;
+  vertical-align: middle;
+  color: #ffffff;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.navbar>ul>li>a:not(.no-submenu) {
+  margin: 1rem;
+}
+.left-nav {
+  display: inline-block;
+}
+
+
+.logo {
+  display: block;
+  background: url(../Svg/logo.svg) no-repeat left center;
+  height: 2rem;
+  width: 2rem;
+  margin: -0.5rem 0.25rem 0rem 0.5rem;
+}
+.right-nav {
+  display: block;
+  float: right;
+}
+
+.no-submenu-right {
+  cursor: pointer;
+}
+
+.user-nav {
+  background-color: rgba(255, 255, 255, 0.061);
+  margin-right: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.user-nav:hover {
+  margin-right: 7px;
+}
+.nav-user-img {
+  display: inline-block;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+  margin: 2px;
+}
+.nav-user-name {
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0px;
+  padding: 2px 5px;
+  vertical-align: middle;
+  text-transform: capitalize;
+}
+/* ===================================================================== */
+/* ===============================Animation======================== */
+@keyframes gradient {
+	0% {
+		background-position: 60% 100%;
+	}
+	50% {
+		background-position: 0% 100%;
+	}
+	100% {
+		background-position: 60% 100%;
+	}
+}
+
+/* ===================================================================== */
+/* ===============================Responsive======================== */
+
+/*--------------------------------------------------------------------------------*/
+@media only screen and (max-device-width: 1024px) and (orientation: portrait) {}
+
+@media only screen and (max-device-width: 1024px) and (orientation: landscape) {}
+
+/*--------------------------------------------------------------------------------*/
+@media only screen and (max-device-width: 800px) and (orientation: portrait) {}
+
+@media only screen and (max-device-width: 800px) and (orientation: landscape) {}
+
+/*--------------------------------------------------------------------------------*/
+@media only screen and (max-device-width: 768px) and (orientation: portrait) {}
+
+@media only screen and (max-device-width: 768px) and (orientation: landscape) {}
+
+/*--------------------------------------------------------------------------------*/
+@media only screen and (max-device-width: 720px) and (orientation: portrait) {}
+
+@media only screen and (max-device-width: 720px) and (orientation: landscape) {}
+
+/*--------------------------------------------------------------------------------*/
+@media only screen and (max-device-width: 600px) and (orientation: portrait) {}
+
+@media only screen and (max-device-width: 600px) and (orientation: landscape) {}
+
+/*--------------------------------------------------------------------------------*/
+@media only screen and (min-device-width: 480px) and (orientation: portrait) {
+  .logo {
+    height: 4rem;
+    width: 4rem;
+  }
+  ul>li>a, ul>li>a:active, ul>li>hover {
+    color:#ffffff;
+    padding: 2rem 0.5rem;
+    font-size: 1.25rem;
+  }
+}
+
+@media only screen and (min-device-width: 480px) and (orientation: landscape) {
+  .logo {
+    height: 4rem;
+    width: 4rem;
+  }
+  ul>li>a, ul>li>a:active, ul>li>hover {
+    color:#ffffff;
+    padding: 2rem 1rem;
+    font-size: 1.25rem;
+  }
+}
+
+/*--------------------------------------------------------------------------------*/
+@media only screen and (max-device-width: 320px) and (orientation: portrait) {}
+
+
+@media only screen and (max-device-width: 320px) and (orientation: landscape) {}
+
+@media only screen and (max-device-width: 240px) and (orientation: portrait) {}
+
+
+@media only screen and (max-device-width: 240px) and (orientation: landscape) {}
+
+/*--------------------------------------------------------------------------------*/

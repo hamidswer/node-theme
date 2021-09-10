@@ -1,0 +1,23 @@
+doctype html
+html
+    head
+        block head
+            meta(charset='UTF-8')
+            meta(name='viewport' content='width=device-width, initial-scale=1.0, shrink-to-fit=no')
+            link(rel='stylesheet' href='/static/css/navbar.css')
+            link(rel='stylesheet' href='/static/css/style.css')
+            link(rel='shortcut icon' type='image/svg+xml' href='/static/img/theme/bookmark.svg')
+            title #{homepageHeadTitleText} 
+    body
+        //- header
+        include _header
+        include _login
+
+        //- content
+        block content 
+
+
+
+        //- footer
+        include _footer
+        script(defer src='/static/js/bundle.js' charset='utf-8')

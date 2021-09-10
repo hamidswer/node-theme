@@ -1,0 +1,66 @@
+extends base
+block append head
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+
+mixin socialMedia(icon, url)
+    span.social-media-bar
+        a(href=`${url}`, target='_blank')
+            object.social-media-icon(data=`/static/Svg/${icon}.svg`, type='image/svg+xml')
+block content
+    section#blog.blog.post-section
+        .container
+            .post-responsive
+                .post-wrapper
+                    .post-image
+                        if (post.image !== 'undefined')
+                            img.post-card-img-2(value=`/static/img/users/${post.user.folder}/${post.image}`)
+                        else
+                            img.post-card-img-2(value=`/static/img/theme/default-post-image.jpg`)
+                        if (post.ingredients.length > 0)
+                            div.ingredients
+                                each ingredient in post.ingredients
+                                    div.ingredient 
+                                        h4.ingredient-name=`${ingredient.name.split(' ').slice(0,2).join(' ')}` 
+                                        h4.ingredient-quantity=`${ingredient.quantity}`
+                        if (user)
+                            if (user.role==='admin')
+                                .edit-post 
+                                .delete-post(data-post-id=`${post.id}`)
+                    .post-content
+                        .post-by
+                            img(src=`/static/img/users/${post.user.folder}/${post.user.photo}` alt='entry author')
+                            .post-by-content
+                                | by : #{post.user.name}
+                        .post-meta
+                            span.post-meta-date=`${post.createdAt.toString().split(' ').slice(0,4).join(' ')}`
+                        .post-title
+                            h4.post-title-1=`${post.name}`
+                        .post.text 
+                            if (post.steps.length > 0)
+                                h2.post-title-2 Recepie
+                                each step, index in post.steps
+                                    h3.post-step=`Step ${index+1} ⇝ ${step}`
+                                if (post.images.length > 0)
+                                    div.center-grid
+                                        each image in post.images 
+                                            span.slider-image-span
+                                                img.slider-image(src=`/static/img/users/${post.user.folder}/${image}`) 
+                            if (post.description)
+                                div.post-description !{post.description}  
+                            if (post.location.address) 
+                                div#map.post-map(data-location=`${JSON.stringify(post.location)}`)
+                                    div.post-map-link
+                                        a.post-map-link-text(href=`https://www.google.com/maps/@${post.location.coordinates[1]},${post.location.coordinates[0]},17z/`, target='_blank')=`${post.location.address}`
+                        .post-shares
+                            span.share--title share this article: 
+                            .pull-right
+                                +socialMedia('facebook', 'https://www.facebook.com')
+                                +socialMedia('instagram', 'https://www.instagram.com')
+                                +socialMedia('twitter', 'https://www.twitter.com')
+                                +socialMedia('youtube', 'https://www.youtube.com')
+            include __reviews
+
+
+
+

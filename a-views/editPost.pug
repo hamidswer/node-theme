@@ -1,0 +1,20 @@
+extends base
+block content 
+    script(src='https://cdn.tiny.cloud/1/4hl9s9zbcufymi5o787d1wv99kqh5aj3zivdsp0ub4taa7bl/tinymce/5/tinymce.min.js' charset='utf-8')
+    script.
+        tinymce.init({
+        selector: `#mytextarea`,
+        setup: function (editor) {
+            editor.on('init', function (e) {
+            editor.setContent(`!{post.description}`);
+            });
+          }
+        });
+    form.edit-post-form
+        h1.add-new-post Edit Post
+        input.post-form-name(type='text',id='name', name='name',placeholder=`${post.name}`, value=`${post.name}`, required)
+        textarea(name='mytextarea', id='mytextarea')
+        input.form-photo-upload(type='file', accept='image/*', id='image', name='image')
+        input.submit(type='submit' value='Publish')
+     
+    

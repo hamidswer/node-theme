@@ -1,0 +1,48 @@
+extends base
+mixin navItem(link,icon,text)
+    li.account-menu-option
+        a.account-menu-link(href=`${link}`)
+            i=`${icon}`
+            h4.nav-text=`${text}`
+block content 
+    nav.account-menu(role='navigation')
+        div#menuToggle 
+            span.dot
+            input(type='checkbox')
+            span 
+            span 
+            span
+            ul.user-menu.menus
+                - if (user.role === 'admin')
+                    +navItem('/me','🧠','DASHBOARD')
+                    +navItem('/me/write','📗','WRITE POSTS')
+                    +navItem('/me/all-users','🍳','ALL USERS')
+                    li.account-menu-option
+                        a.account-menu-link#loggout()
+                            i 🎇
+                            h4.nav-text Logout
+                - else 
+                    +navItem('/me','🧠','DASHBOARD')
+                    +navItem('/me/write','📗','WRITE POSTS')
+                    li.account-menu-option
+                        a.account-menu-link#loggout()
+                            i 🎇
+                            h4.nav-text Logout
+        div.account-content
+            div.account-dashboard
+                div.form-style-6
+                    h1.account-dashboard-title SETTINGS 
+                    form#settings-user-information
+                        input#settings-user-name(type='text', name='name', value=`${user.name}`, placeholder='Your Name', required)
+                        input#settings-user-email(type='email', name='email', value=`${user.email}`, placeholder='Email Address', required)
+                        input.form-photo-upload#photo(type='file', accept='image/*', name='photo')
+                        label(for='photo') Choose new photo
+                        input(type='submit' value='Send')
+                div &nbsp;
+                div.form-style-6
+                    h1.account-dashboard-title PASSWORD 
+                    form#settings-user-password
+                        input#settings-user-current-password(type='password' name='field4' placeholder='Current password')
+                        input#settings-user-new-password(type='password' name='field5' placeholder='New password')
+                        input#settings-user-new-password-confirm(type='password' name='field6' placeholder='Confirm password')
+                        input(type='submit' value='Send')

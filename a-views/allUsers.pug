@@ -1,0 +1,12 @@
+extends base
+block content 
+    if (user.role === 'admin')
+        h1.users-header Users List
+            .users-container
+                each user in users 
+                    .two-cells 
+                        span
+                            h1=`${user.name}`
+                            img.post-review-img(src=`/static/img/users/${user.folder}/${user.photo}` alt=`${user.name}` title=`${user.name}`)
+                            h6.post-review-name=`${user.role}`
+                            h6.post-review-name=`${user.email}`

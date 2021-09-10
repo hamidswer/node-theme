@@ -1,0 +1,61 @@
+//- each review in post.reviews
+//-     span.post-review-box
+//-         img.post-review-img(src=`/static/img/users/${review.user.folder}/${review.user.photo}`)
+//-         span.post-review-title
+//-             h3.post-review-user=`${review.user.name}`
+//-             span.post-review-rate=`${review.rating}`
+//-             h4.post-review-text=`${review.review}`
+ul.comment-section
+    each review in post.reviews
+        if (review.user.role==='admin')
+            li.user-comment
+                img.post-review-img(src=`/static/img/users/${review.user.folder}/${review.user.photo}` alt=`${review.user.name}` title=`${review.user.name}`)
+                span.post-review-info
+                    h6.post-review-name=`${review.user.name}`
+                    h6.post-review-rate=`${review.rating}`
+                if (user)
+                    if (user.role==='admin')
+                        h6.delete-review(data-review-id=`${review.id}`)
+                p.post-review-text=`${review.review}`
+        else 
+            li.user-comment
+                img.post-review-img(src=`/static/img/users/${review.user.folder}/${review.user.photo}` alt=`${review.user.name}` title=`${review.user.name}`)
+                span.post-review-info
+                    h6.post-review-name=`${review.user.name}`
+                    h6.post-review-rate=`${review.rating}`
+                if (user)
+                    if (user.role==='admin')
+                        h6.delete-review(data-review-id=`${review.id}`)
+                p.post-review-text=`${review.review}`
+    if user 
+        li.write-new
+            form.review-form(action='#' method='post')
+                .rating
+                    label
+                        input(type='radio' name='stars' value='1')
+                        span.icon ★
+                    label
+                        input(type='radio' name='stars' value='2')
+                        span.icon ★
+                        span.icon ★
+                    label
+                        input(type='radio' name='stars' value='3')
+                        span.icon ★
+                        span.icon ★
+                        span.icon ★
+                    label
+                        input(type='radio' name='stars' value='4')
+                        span.icon ★
+                        span.icon ★
+                        span.icon ★
+                        span.icon ★
+                    label
+                        input(type='radio' name='stars' value='5')
+                        span.icon ★
+                        span.icon ★
+                        span.icon ★
+                        span.icon ★
+                        span.icon ★
+                textarea.review-text-input(placeholder='Write your comment here' name='comment')
+                img(src=`/static/img/users/${user.folder}/${user.photo}` width='35' alt=`${user.name}` title=`${user.name}`)
+                button(type='submit') Submit

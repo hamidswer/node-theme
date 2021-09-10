@@ -1,0 +1,13 @@
+html
+    head
+        title= subject
+        include _style
+    body
+        .full-screen
+            p.email-title=`Hi, ${firstName}`
+            p.email-paragraph Welcome to our community, we are glad to have you;
+            p.email-paragraph We are all a big family here, so make sure to upload your user photo so we get to know you a bit better!
+            a.email-button(href=`${url}`) Upload your photo
+            p.email-paragraph If you do not want to receive any more email, please unsubscribe!
+            a.email-button(href='/') Unsubscribe
+            p.email-footer Provided by soomera.com, all right reserved.

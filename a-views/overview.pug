@@ -1,0 +1,61 @@
+extends base
+block content 
+    section.header-image-collection
+        .header-image-one
+            a.header--img(href=`/posts/${topFourPosts[0].slug}`)
+                img(src=`/static/img/users/${topFourPosts[0].user.folder}/${topFourPosts[0].image}` alt=`${topFourPosts[0].image.replace('.jpg', '')}`)
+                h2.header-text=`${topFourPosts[0].name}`
+        .header-image-two
+            a.header--img(href=`/posts/${topFourPosts[1].slug}`)
+                img(src=`/static/img/users/${topFourPosts[1].user.folder}/${topFourPosts[1].image}` alt=`${topFourPosts[1].image.replace('.jpg', '')}`)
+                h2.header-text=`${topFourPosts[1].name}`
+        .header-image-three
+            a.header--img(href=`/posts/${topFourPosts[2].slug}`)
+                img(src=`/static/img/users/${topFourPosts[2].user.folder}/${topFourPosts[2].image}` alt=`${topFourPosts[2].image.replace('.jpg', '')}`)
+                h2.header-text=`${topFourPosts[2].name}`
+        .header-image-four
+            a.header--img(href=`/posts/${topFourPosts[3].slug}`)
+                img(src=`/static/img/users/${topFourPosts[3].user.folder}/${topFourPosts[3].image}` alt=`${topFourPosts[3].image.replace('.jpg', '')}`)
+                h2.header-text=`${topFourPosts[3].name}`
+    .sort-by#sort
+        select#sort-by-select.sort-by-selection(autocomplete='off', onchange='location = this.value;')
+            option(Select='', data-track='Sort:select') Select to sort
+            option(value='/overview/Featured') Sort: Featured
+            option(value='/overview/ratings') Sort: Customer Rating
+            option(value='/overview/slow') Sort: Slow Cook Time
+            option(value='/overview/medium') Sort: Medium Cook Time
+            option(value='/overview/fast') Sort: Fast Cook Time
+    div.post-cards
+        span.all-posts-cards 
+            each post in posts
+                span.post-card
+                    if (post.image !== 'undefined')
+                        img.post-card-img(src=`/static/img/users/${post.user.folder}/${post.image}`, alt=`${post.image.replace('/img/', '').replace('.jpg', '')}`)
+                    else 
+                        img.post-card-img(src=`/static/img/theme/default-post-image.jpg`, alt=`${post.image.replace('/img/', '').replace('.jpg', '')}`)
+                    if (post.cookTime)
+                        h4.post-card-tag=`${post.cookTime}`
+                    h3.post-card-title-1=`${post.name.split(' ').slice(0,2).join(' ')}`
+                    if (post.steps.length > 0)
+                        h5.post-card-description=`${post.steps.join().split(' ').slice(0,10).join(' ')} ...`
+                    else
+                        h5.post-card-description=`${post.snippet.split(' ').slice(0,20).join(' ')}`
+                    a.post-card-source(href=`/posts/${post.slug}`)
+                        span.post-card-footer 
+                            h5.post-card-rating=`${post.ratingsAverage} (${post.ratingsQuantity} votes)`
+                            if (post.location.description) 
+                                h5.post-card-location=`${post.location.description}`
+                            h6.post-card-details Read more 
+                            h6.ripple
+    .cc
+        button.btn.btn-previous(value='1')
+            svg.border(width='180px' height='60px' viewBox='0 0 180 60')
+                polyline.bg-line(points='179,1 179,59 1,59 1,1 179,1')
+                    polyline.hl-line(points='179,1 179,59 1,59 1,1 179,1')
+                        span Previous
+        button.btn.btn-next(value='1')
+            svg.border(width='180px' height='60px' viewBox='0 0 180 60')
+                polyline.bg-line(points='179,1 179,59 1,59 1,1 179,1')
+                    polyline.hl-line(points='179,1 179,59 1,59 1,1 179,1')
+                        span Next
+        
