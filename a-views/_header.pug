@@ -8,7 +8,6 @@ div.header
                 li.login
                     a(href='/me')
                         img.nav-user-img(src=`/static/img/users/${user.folder}/${user.photo}`, alt=`photo of ${user.name}`)
-                        p.nav-user-name=user.name.split(' ')[0]
             else
                 li.login
-                    a.no-submenu.no-submenu-right#login LOGIN
+                    a.no-submenu.no-submenu-right#login.login-icon 🎪

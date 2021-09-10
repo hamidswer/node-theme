@@ -1755,6 +1755,7 @@ address, blockquote, dd, dl, fieldset, form, ol, p, pre, table, ul {
   margin: auto;
   text-align: right;
   position: relative;
+  margin-right: 20px;
 }
 .sort-by-selection {
   -webkit-appearance: none;
