@@ -2,12 +2,13 @@
   "name": "theme",
   "version": "1.0.0",
   "description": "theme",
-  "main": "server.js",
+  "main": "app.js",
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
     "axios": "^0.21.1",
     "bcrypt": "^5.0.1",
     "bcryptjs": "^2.4.3",
+    "compression": "^1.7.4",
     "cookie-parser": "^1.4.5",
     "crypto": "^1.0.1",
     "dompurify": "^2.3.1",
@@ -17,6 +18,7 @@
     "express-mongo-sanitize": "^2.1.0",
     "express-rate-limit": "^5.3.0",
     "helmet": "^4.6.0",
+    "heroku": "^7.59.0",
     "hpp": "^0.2.3",
     "html-to-text": "^8.0.0",
     "jsdom": "^17.0.0",
@@ -54,5 +56,8 @@
     "build:js": "parcel watch ./c-public/js/index.js --out-dir ./c-public/js --out-file bundle.js"
   },
   "author": "Hamid",
-  "license": "ISC"
+  "license": "ISC",
+  "engines": {
+    "node": ">=10.0.0"
+  }
 }

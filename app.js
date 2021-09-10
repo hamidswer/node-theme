@@ -8,6 +8,7 @@ const xss = require('xss-clean')
 const hpp = require('hpp')
 const app = express()
 const cookieParser = require('cookie-parser')
+const compression = require('compression')
 
 // Import project data and internal modules
 const {
@@ -61,7 +62,6 @@ app.use(
     whitelist: parameterPollutionWhitelist
   })
 )
-
 // Route
 const postRouter = require(`./${postRouterLoc}`)
 const userRouter = require(`./${userRouterLoc}`)
@@ -71,6 +71,8 @@ const viewRouter = require(`./${viewRouterLoc}`)
 if (process.env.NODE_ENV === 'development') {
   app.use(morgan('dev'))
 }
+app.use(compression())
+
 app.use(express.json())
 app.use(homeUrl, viewRouter)
 app.use(userRouterUrl, userRouter)
