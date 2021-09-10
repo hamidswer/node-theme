@@ -1488,6 +1488,40 @@ footer a:hover{
   .header-image-small-section {
       width: 50%;
   }
+  
+}
+@media (max-width: 660px) {
+  .header-image-collection {
+    grid-template-columns: repeat(auto-fit, 200px);
+  }
+  .header-image-one {
+    display: grid;
+    grid-column: span 6;
+    grid-row: 1/2;
+    margin: 0.25rem;
+
+  }
+  .header-image-two {
+    display: grid;
+    grid-column: span 6;
+    grid-row: 2/3;
+    margin: 0.25rem;
+
+  }
+  .header-image-three {
+    display: grid;
+    grid-column: span 6;
+    grid-row: 3/4;
+    margin: 0.25rem;
+
+  }
+  .header-image-four {
+    display: grid;
+    grid-column: span 6;
+    grid-row: 4/5;
+    margin: 0.25rem;
+
+  }
 }
 
 /* post */
