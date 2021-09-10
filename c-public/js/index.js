@@ -88,10 +88,7 @@ if (resetPasswordForm) {
     const passwordConfirm = document.querySelector(
       '#reset-user-new-password-confirm'
     ).value
-    const token = window.location.href.replace(
-      'http://127.0.0.1:8081/users/resetPassword/',
-      ''
-    )
+    const token = window.location.href.replace('/users/resetPassword/', '')
     resetPassword(password, passwordConfirm, token)
   })
 }
@@ -366,7 +363,7 @@ const ingredientsB = document.querySelector('.post-card-img-2')
 if (ingredientsB) {
   const ingredientsBackground = ingredientsB
     .getAttribute('value')
-    .replace('/static/', 'http://127.0.0.1:8081/static/')
+    .replace('/static/', '/static/')
   if (ingredientsBackground) {
     const ingrediends = document.querySelector('.post-image')
     ingrediends.style.backgroundImage = `url('${ingredientsBackground}')`
