@@ -4,7 +4,7 @@ export const forgetPassword = async (email) => {
   try {
     const res = await axios({
       method: 'POST',
-      url: 'http://127.0.0.1:8081/users/forgotPassword',
+      url: '/users/forgotPassword',
       data: {
         email
       }

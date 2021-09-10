@@ -8515,7 +8515,7 @@ var login = /*#__PURE__*/function () {
             _context.next = 3;
             return (0, _axios.default)({
               method: 'POST',
-              url: 'http://127.0.0.1:8081/users/login',
+              url: '/users/login',
               data: {
                 email: email,
                 password: password
@@ -8612,7 +8612,7 @@ var signup = /*#__PURE__*/function () {
             _context3.next = 3;
             return (0, _axios.default)({
               method: 'POST',
-              url: 'http://127.0.0.1:8081/users/signup',
+              url: '/users/signup',
               data: {
                 name: name,
                 email: email,
@@ -8684,7 +8684,7 @@ var forgetPassword = /*#__PURE__*/function () {
             _context.next = 3;
             return (0, _axios.default)({
               method: 'POST',
-              url: 'http://127.0.0.1:8081/users/forgotPassword',
+              url: '/users/forgotPassword',
               data: {
                 email: email
               }
@@ -8752,7 +8752,7 @@ var resetPassword = /*#__PURE__*/function () {
             _context.next = 3;
             return (0, _axios.default)({
               method: 'PATCH',
-              url: "http://127.0.0.1:8081/users/resetPassword/".concat(token),
+              url: "/users/resetPassword/".concat(token),
               data: {
                 password: password,
                 passwordConfirm: passwordConfirm
@@ -8844,7 +8844,7 @@ var updateData = /*#__PURE__*/function () {
         switch (_context.prev = _context.next) {
           case 0:
             _context.prev = 0;
-            url = type === 'password' ? 'http://127.0.0.1:8081/users/updateMyPassword' : 'http://127.0.0.1:8081/users/updateMe';
+            url = type === 'password' ? '/users/updateMyPassword' : '/users/updateMe';
             _context.next = 4;
             return (0, _axios.default)({
               method: 'PATCH',
@@ -8982,7 +8982,7 @@ var deleteReview = /*#__PURE__*/function () {
             _context.next = 3;
             return (0, _axios.default)({
               method: 'DELETE',
-              url: "http://127.0.0.1:8081/reviews/".concat(id),
+              url: "/reviews/".concat(id),
               data: {}
             });
 
@@ -9044,7 +9044,7 @@ var writePost = /*#__PURE__*/function () {
             _context.next = 3;
             return (0, _axios.default)({
               method: 'POST',
-              url: 'http://127.0.0.1:8081/posts',
+              url: '/posts',
               data: data
             });
 
@@ -9175,7 +9175,7 @@ var deletePost = /*#__PURE__*/function () {
             _context.next = 3;
             return (0, _axios.default)({
               method: 'DELETE',
-              url: "http://127.0.0.1:8081/posts/".concat(id),
+              url: "/posts/".concat(id),
               data: {}
             });
 
@@ -9595,7 +9595,7 @@ if (resetPasswordForm) {
     e.preventDefault();
     var password = document.querySelector('#reset-user-new-password').value;
     var passwordConfirm = document.querySelector('#reset-user-new-password-confirm').value;
-    var token = window.location.href.replace('http://127.0.0.1:8081/users/resetPassword/', '');
+    var token = window.location.href.replace('/users/resetPassword/', '');
     (0, _resetPassword.resetPassword)(password, passwordConfirm, token);
   });
 } // --------------------------------------------------
@@ -9909,7 +9909,7 @@ if (previousButton && nextButton) {
 var ingredientsB = document.querySelector('.post-card-img-2');
 
 if (ingredientsB) {
-  var ingredientsBackground = ingredientsB.getAttribute('value').replace('/static/', 'http://127.0.0.1:8081/static/');
+  var ingredientsBackground = ingredientsB.getAttribute('value').replace('/static/', '/static/');
 
   if (ingredientsBackground) {
     var ingrediends = document.querySelector('.post-image');
@@ -9944,7 +9944,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "8626" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "1047" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

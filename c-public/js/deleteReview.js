@@ -4,7 +4,7 @@ export const deleteReview = async (id) => {
   try {
     await axios({
       method: 'DELETE',
-      url: `http://127.0.0.1:8081/reviews/${id}`,
+      url: `/reviews/${id}`,
       data: {}
     })
     setTimeout(function () {

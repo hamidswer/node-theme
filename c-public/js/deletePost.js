@@ -4,7 +4,7 @@ export const deletePost = async (id) => {
   try {
     await axios({
       method: 'DELETE',
-      url: `http://127.0.0.1:8081/posts/${id}`,
+      url: `/posts/${id}`,
       data: {}
     })
     location.assign('/')
