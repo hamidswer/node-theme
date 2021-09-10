@@ -1190,6 +1190,7 @@ p.password-animation-1010 {
 .menus li {
   padding: 10px 0;
   font-size: 22px;
+  padding-right: 1rem;
 }
 
 #menuToggle input:checked ~ ul {
@@ -1367,7 +1368,7 @@ footer .content .box{
   transition: all 0.4s ease;
 }
 footer .content .footer-header{
-  font-size: 22px;
+  font-size: 1.25rem;
   font-weight: 600;
   color: #fff;
   margin-bottom: 16px;
