@@ -27,7 +27,7 @@ export const logout = async () => {
   try {
     const res = await axios({
       method: 'GET',
-      url: 'http://127.0.0.1:8081/users/logout'
+      url: '/users/logout'
     })
     if ((res.data.status = 'success')) {
       location.assign('/overview')

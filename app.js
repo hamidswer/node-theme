@@ -62,7 +62,7 @@ app.use(
     whitelist: parameterPollutionWhitelist
   })
 )
-// Route
+
 const postRouter = require(`./${postRouterLoc}`)
 const userRouter = require(`./${userRouterLoc}`)
 const reviewRouter = require(`./${reviewRouterLoc}`)
@@ -74,6 +74,7 @@ if (process.env.NODE_ENV === 'development') {
 app.use(compression())
 
 app.use(express.json())
+
 app.use(homeUrl, viewRouter)
 app.use(userRouterUrl, userRouter)
 app.use(postRouterUrl, postRouter)
