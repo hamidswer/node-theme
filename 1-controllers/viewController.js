@@ -89,3 +89,9 @@ exports.getAllUsers = cathcAsync(async (req, res) => {
     users
   })
 })
+
+exports.downloadImage = cathcAsync(async (req, res) => {
+  const imageId = req.params.imgId
+  const userId = req.params.userId
+  res.download(`c-public/img/users/${userId}/${imageId}`)
+})

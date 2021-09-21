@@ -2,8 +2,6 @@ const express = require('express')
 const router = express.Router()
 const {
   viewControllerLoc,
-  homeUrl,
-  overviewUrl,
   postUrl,
   authControllerLoc
 } = require('./../projectData')
@@ -15,12 +13,11 @@ router.get(
   authController.isLoggedIn,
   viewController.getAllUsers
 )
-router.get(homeUrl, authController.isLoggedIn, viewController.getOverview)
-router.get(overviewUrl, authController.isLoggedIn, viewController.getOverview)
-router.get('/posts', authController.isLoggedIn, viewController.getOverview)
+
 router.get('/me', authController.isLoggedIn, viewController.getAccount)
 router.get('/users/resetPassword/:id', viewController.resetPassword)
 router.get(postUrl, authController.isLoggedIn, viewController.getPost)
+router.get('/download/img/users/:userId/:imgId', viewController.downloadImage)
 router.get('/me/write', authController.isLoggedIn, viewController.writePost)
 router.get(
   '/posts/:id/edit',
@@ -33,4 +30,5 @@ router.get(
   viewController.getOverview
 )
 router.get('/*/', authController.isLoggedIn, viewController.getOverview)
+
 module.exports = router
