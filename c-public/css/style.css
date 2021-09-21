@@ -1078,6 +1078,7 @@ p.password-animation-1010 {
   margin: auto;
   margin-top: 5rem;
   text-align: center;
+  min-height: 700px;
 }
 .error-header {
   font-size: 1.5rem;

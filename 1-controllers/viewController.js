@@ -3,7 +3,6 @@ const {
   cathcAsyncLoc,
   appErrorLoc,
   userModelLoc,
-  homepageHeadTitleText,
   apiFeaturesLoc
 } = require('./../projectData')
 
@@ -12,11 +11,6 @@ const postModel = require(`./../${postModelLoc}`)
 const AppError = require(`./../${appErrorLoc}`)
 const UserModel = require(`./../${userModelLoc}`)
 const APIFeatures = require(`./../${apiFeaturesLoc}`)
-exports.getHome = cathcAsync(async (req, res, next) => {
-  res.status(200).render('base', {
-    homepageHeadTitleText
-  })
-})
 
 exports.writePost = cathcAsync(async (req, res, next) => {
   res.status(200).render('writePost')
