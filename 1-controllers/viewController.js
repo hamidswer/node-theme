@@ -4,8 +4,7 @@ const {
   appErrorLoc,
   userModelLoc,
   homepageHeadTitleText,
-  apiFeaturesLoc,
-  topFourUrl
+  apiFeaturesLoc
 } = require('./../projectData')
 
 const cathcAsync = require(`./../${cathcAsyncLoc}`)

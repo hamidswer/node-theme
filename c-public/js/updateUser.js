@@ -2,8 +2,6 @@ import axios from 'axios'
 import { hideAlert, showAlert } from './alerts'
 
 export const updateData = async (data, type) => {
-  console.log(data, type)
-
   try {
     const url =
       type === 'password' ? '/users/updateMyPassword' : '/users/updateMe'
