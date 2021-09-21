@@ -202,7 +202,7 @@ if (userInformation) {
     form.append('name', document.querySelector('#settings-user-name').value)
     form.append('email', document.querySelector('#settings-user-email').value)
     form.append('photo', document.querySelector('#photo').files[0])
-    updateData(form, 'data')
+    updateData(form, 'datas')
   })
 }
 // =====> password

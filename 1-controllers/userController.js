@@ -5,7 +5,8 @@ const {
   cathcAsyncLoc,
   appErrorLoc,
   handlerLoc,
-  canNotFind,routerStaticLoc
+  canNotFind,
+  routerStaticLoc
 } = require('../projectData')
 
 const handler = require(`./../${handlerLoc}`)
@@ -75,7 +76,9 @@ exports.resizeUserPhoto = catchAsync(async (req, res, next) => {
     .resize(500, 500)
     .toFormat('jpeg')
     .jpeg({ quality: 90 })
-    .toFile(`${routerStaticLoc}/img/users/${req.user.folder}/${req.file.filename}`)
+    .toFile(
+      `${routerStaticLoc}/img/users/${req.user.folder}/${req.file.filename}`
+    )
   next()
 })
 exports.updateMe = catchAsync(async (req, res, next) => {

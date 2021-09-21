@@ -8843,40 +8843,41 @@ var updateData = /*#__PURE__*/function () {
       while (1) {
         switch (_context.prev = _context.next) {
           case 0:
-            _context.prev = 0;
+            console.log(data, type);
+            _context.prev = 1;
             url = type === 'password' ? '/users/updateMyPassword' : '/users/updateMe';
-            _context.next = 4;
+            _context.next = 5;
             return (0, _axios.default)({
               method: 'PATCH',
               url: url,
               data: data
             });
 
-          case 4:
+          case 5:
             res = _context.sent;
 
             if (res.data.status === 'success') {
               location.assign('/me');
             }
 
-            _context.next = 12;
+            _context.next = 13;
             break;
 
-          case 8:
-            _context.prev = 8;
-            _context.t0 = _context["catch"](0);
+          case 9:
+            _context.prev = 9;
+            _context.t0 = _context["catch"](1);
             (0, _alerts.showAlert)('err', _context.t0.response.data.message || 'Something is wrong!');
             setTimeout(function () {
               // location.assign('/overview')
               (0, _alerts.hideAlert)();
             }, 5000);
 
-          case 12:
+          case 13:
           case "end":
             return _context.stop();
         }
       }
-    }, _callee, null, [[0, 8]]);
+    }, _callee, null, [[1, 9]]);
   }));
 
   return function updateData(_x, _x2) {
@@ -9716,7 +9717,7 @@ if (userInformation) {
     form.append('name', document.querySelector('#settings-user-name').value);
     form.append('email', document.querySelector('#settings-user-email').value);
     form.append('photo', document.querySelector('#photo').files[0]);
-    (0, _updateUser.updateData)(form, 'data');
+    (0, _updateUser.updateData)(form, 'datas');
   });
 } // =====> password
 
@@ -9944,7 +9945,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "23629" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "4281" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
