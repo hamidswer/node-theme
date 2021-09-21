@@ -32,4 +32,5 @@ router.get(
   authController.isLoggedIn,
   viewController.getOverview
 )
+router.get('/*/', authController.isLoggedIn, viewController.getOverview)
 module.exports = router
