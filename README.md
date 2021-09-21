@@ -25,5 +25,4 @@ change its name and profile picture after logged in.
 reset its password.
 use forget password, to set a new password by token sent to its mail.
 
-This app is on development environment!
 This license does not include the right to use photos! (They're not taken by me, and I just have the regular license to use them)
