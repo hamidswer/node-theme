@@ -1,4 +1,4 @@
-pure CSS, Node.js, MongoDB, Mongoose, Express, Pug, Javascript project.
+Node.js, MongoDB, Mongoose, Express, Pug, Javascript, Pure CSS project.
 
 Node theme demo: https://rocky-bastion-73594.herokuapp.com/ 
 
