@@ -8567,7 +8567,7 @@ var logout = /*#__PURE__*/function () {
             _context2.prev = 0;
             _context2.next = 3;
             return (0, _axios.default)({
-              method: 'GET',
+              method: 'POST',
               url: '/users/logout'
             });
 
@@ -9944,7 +9944,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "1070" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "24264" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -1,4 +1,6 @@
 extends base
+block prepend head 
+    title=`Recipes || All users`
 block content 
     if (user.role === 'admin')
         h1.users-header Users List

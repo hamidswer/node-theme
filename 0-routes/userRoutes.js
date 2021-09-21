@@ -24,7 +24,7 @@ const userRouter = express.Router()
 // --------------Unprotected, and not restricted
 userRouter.post(signupUrl, authController.signup)
 userRouter.post(loginUrl, authController.login)
-userRouter.get(logoutUrl, authController.logout)
+userRouter.post(logoutUrl, authController.logout)
 userRouter.post(forgotPasswordUrl, authController.forgotPassword)
 userRouter.patch(resetPasswordTokenUrl, authController.resetPassword)
 // ---------------Protected, but not restricted

@@ -1,4 +1,6 @@
 extends base
+block prepend head 
+    title=`Recipes || ${user.name.toUpperCase()} account`
 mixin navItem(link,icon,text)
     li.account-menu-option
         a.account-menu-link(href=`${link}`)

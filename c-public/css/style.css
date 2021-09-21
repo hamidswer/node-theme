@@ -1578,6 +1578,7 @@ post-section {
   background-size : cover;
   background-repeat : no-repeat;
   background-position: center;
+  min-height: 500px;
 }
 .post-wrapper .post-image img {
   opacity: 0.65;
