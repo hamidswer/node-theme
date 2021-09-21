@@ -9,7 +9,7 @@ change password,
 welcome email,
 sorting function,
 geolocation for each place,
-voting system.
+voting system, and download response.
 
 What a regular user can do?
 write comments, and vote to each recepie.
