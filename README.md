@@ -12,7 +12,7 @@ geolocation for each place,
 voting system, and download response.
 
 What a regular user can do?
-write comments, and vote to each recepie.
+write comments and simple post, and vote to each recepie.
 change its name and profile picture after logged in.
 reset its password.
 use forget password, to set a new password by token sent to its mail.
