@@ -16,7 +16,7 @@ write comments, and vote to each recepie.
 change its name and profile picture after logged in.
 reset its password.
 use forget password, to set a new password by token sent to its mail.
-user login: email: user@soomera.com , password: 123456789
+user login: email: maryam@soomera.com , password: 123456789
 
 What an admin can do?
 write new post, and mange users, comments, posts.
